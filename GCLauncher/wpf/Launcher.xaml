@@ -1,0 +1,34 @@
+﻿<Window x:Class="GCLauncher.Launcher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        OpacityMask="White" 
+        WindowStyle="None" 
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Title="Launcher" Height="547" Width="760" ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="547" VerticalAlignment="Top" Width="760" Source="/images/bg.png" Margin="0,0,0,0"/>
+        <Image HorizontalAlignment="Left" Height="129" VerticalAlignment="Top" Width="258" Source="/images/logo.png" Margin="95,198,0,0"/>
+        <Image HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="139" x:Name="btn_image_play" Source="/images/play/locked.png" Margin="430,478,0,0"/>
+        <Button Content="btnplay" IsEnabled="False" HorizontalAlignment="Left" Margin="430,478,0,0" VerticalAlignment="Top" Width="181" Height="56" Opacity="0" x:Name="btnplay" Click="ClickLauncher" MouseMove="mouseEnter" MouseLeave="mouseLeave"/>
+        <ProgressBar HorizontalAlignment="Left" Height="42" Margin="5,507,0,0" VerticalAlignment="Top" Width="380" x:Name="DownloadBarTotal" BorderBrush="{x:Null}" Value="80"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="33,486,0,0" TextWrapping="Wrap" Text="Baixando arquivo: Main.exe - 80% [1/32]" VerticalAlignment="Top" x:Name="fileText" Foreground="Black" Width="320"/>
+        <Image HorizontalAlignment="Left" Height="12" VerticalAlignment="Top" Width="12" Source="/images/close.png" Margin="625,298,0,0" x:Name="cl" RenderTransformOrigin="14.375,5.667"/>
+        <Button Content="clb" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="625,298,0,0" Width="12" Height="12" Click="ClickLauncher" x:Name="clb" MouseEnter="mouseEnter" MouseLeave="mouseLeave"/>
+        <!-- News List -->
+            <TextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="10,336,0,0" TextWrapping="Wrap" Text="[07/07/2007] Notícia 1" VerticalAlignment="Top" x:Name="news1" Foreground="White" Width="282"/>
+            <Button Content="news1b" IsEnabled="False" HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="282" Opacity="0" x:Name="news1b" Click="ClickLauncher"/>
+            <TextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="10,359,0,0" TextWrapping="Wrap" Text="[07/07/2007] Notícia 2" VerticalAlignment="Top" x:Name="news2" Foreground="White" Width="282"/>
+            <Button Content="news2b" IsEnabled="False" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Width="282" Opacity="0" x:Name="news2b" Click="ClickLauncher"/>
+            <TextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="10,382,0,0" TextWrapping="Wrap" Text="[07/07/2007] Notícia 3" VerticalAlignment="Top" x:Name="news3" Foreground="White" Width="282"/>
+            <Button Content="news3b" IsEnabled="False" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top" Width="282" Opacity="0" x:Name="news3b" Click="ClickLauncher"/>
+            <TextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="10,406,0,0" TextWrapping="Wrap" Text="[07/07/2007] Notícia 4" VerticalAlignment="Top" x:Name="news4" Foreground="White" Width="282"/>
+            <Button Content="news4b" IsEnabled="False" HorizontalAlignment="Left" Margin="10,404,0,0" VerticalAlignment="Top" Width="282" Opacity="0" x:Name="news4b" Click="ClickLauncher"/>
+        <!-- News List -->
+    </Grid>
+</Window>

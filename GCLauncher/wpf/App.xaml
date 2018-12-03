@@ -1,0 +1,8 @@
+﻿<Application x:Class="GCLauncher.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="/Wpf/Splash.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="ProgressBar.xaml" />
+    </Application.Resources>
+</Application>
